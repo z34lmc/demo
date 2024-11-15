@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "blog post title\n\n\n\nQuarto\n\n\nR\n\n\nData Analysis\n\n\n\nblog post description\n\n\n\nYour Name\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,5 +12,19 @@
     "title": "demo",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/YYYY-MM-DD-short-post-description/index.html",
+    "href": "posts/YYYY-MM-DD-short-post-description/index.html",
+    "title": "blog post title",
+    "section": "",
+    "text": "Introduction\nSome text\n\n\n\n\nCitationBibTeX citation:@online{name,\n  author = {Name, Your},\n  title = {Blog Post Title},\n  url = {https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nName, Your. n.d. “Blog Post Title.” https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]

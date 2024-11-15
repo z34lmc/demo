@@ -9,6 +9,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: posts.qmd # add your listing page file to your navbar, just like you would any other new web page
+        text: Blog
 
 format:
   html:
