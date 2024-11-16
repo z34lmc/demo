@@ -18,7 +18,7 @@
     "href": "posts/YYYY-MM-DD-short-post-description/index.html",
     "title": "blog post title",
     "section": "",
-    "text": "Introduction\nSome text\n\n\n\n\nCitationBibTeX citation:@online{name,\n  author = {Name, Your},\n  title = {Blog Post Title},\n  url = {https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nName, Your. n.d. “Blog Post Title.” https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/."
+    "text": "Introduction\nDogs Are better than cats\n\n\n\n\n\nCitationBibTeX citation:@online{name,\n  author = {Name, Your},\n  title = {Blog Post Title},\n  url = {https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nName, Your. n.d. “Blog Post Title.” https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/."
   },
   {
     "objectID": "about.html",

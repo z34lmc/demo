@@ -8,10 +8,12 @@ author:
 categories: [Quarto, R, Data Analysis]
 citation:
   url: https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/
-image: preview_image.png # Adds an image to go along with your blog post
+image: preview-image.png # Adds an image to go along with your blog post
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
 # Introduction
 
-Some text
+Dogs Are better than cats
+
+![](preview-mage.png)
