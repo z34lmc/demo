@@ -9,9 +9,10 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: posts.qmd 
-        text: Blog
-
+      - href: cv.qmd
+        text: CV
+      - 11-website.qmd
+      
 format:
   html:
     theme: cosmo

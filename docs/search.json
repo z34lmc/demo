@@ -1,10 +1,409 @@
 [
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "My Blog",
-    "section": "",
-    "text": "blog post title\n\n\n\nQuarto\n\n\nR\n\n\nData Analysis\n\n\n\nblog post description\n\n\n\nYour Name\n\n\n\n\n\n\n\n\nNo matching items"
+    "objectID": "11-website.html#prerequisites",
+    "href": "11-website.html#prerequisites",
+    "title": "demo",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nDownload R: https://cran.r-project.org\nDownload R: Studio https://posit.co/downloads/\nSet up GitHub account: GitHub.com\nDownload GitHub Desktop: https://desktop.github.com/download/"
+  },
+  {
+    "objectID": "11-website.html#workflow",
+    "href": "11-website.html#workflow",
+    "title": "demo",
+    "section": "Workflow",
+    "text": "Workflow\n\nThe workflow we will be using to create our website is:\n\nCreate a new Quarto project in R Studio\nConnect our project directory to GitHub through Github Desktop\nPublish the newly created website via GitHub Pages\nCreate new pages for the website\nAdd a blog to the website\nCustomize the website"
+  },
+  {
+    "objectID": "11-website.html#r-projects-1",
+    "href": "11-website.html#r-projects-1",
+    "title": "demo",
+    "section": "R Projects",
+    "text": "R Projects\n\nTo begin, create a new Quarto project in R Studio\n\nClick File-&gt;New Project…"
+  },
+  {
+    "objectID": "11-website.html#r-projects-cont.",
+    "href": "11-website.html#r-projects-cont.",
+    "title": "demo",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nSelect New Directory"
+  },
+  {
+    "objectID": "11-website.html#r-projects-cont.-1",
+    "href": "11-website.html#r-projects-cont.-1",
+    "title": "demo",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nSelect Quarto Website"
+  },
+  {
+    "objectID": "11-website.html#r-projects-cont.-2",
+    "href": "11-website.html#r-projects-cont.-2",
+    "title": "demo",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nName the directory. I named mine demo.\nChoose a path for the new project and click Create Project"
+  },
+  {
+    "objectID": "11-website.html#quarto-website-files",
+    "href": "11-website.html#quarto-website-files",
+    "title": "demo",
+    "section": "Quarto Website Files",
+    "text": "Quarto Website Files\n\nR Studio creates a project with a number of files"
+  },
+  {
+    "objectID": "11-website.html#quarto-website-files-cont.",
+    "href": "11-website.html#quarto-website-files-cont.",
+    "title": "demo",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\n_quarto.yml: key configuration file for the Quarto website.\n\nDefines the overall structure and settings for the website project, project:\nDefines metadata for the website, e.g., title, author(s), and other descriptive info, title: and description:\nControls the structure of the website, navbar:\nSpecifies themes, format:, theme:, css:"
+  },
+  {
+    "objectID": "11-website.html#quarto-website-files-cont.-1",
+    "href": "11-website.html#quarto-website-files-cont.-1",
+    "title": "demo",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\nindex.qmd: home page of your Quarto website\n\nDefines the content and layout for the main landing page of the site\nCan add Markdown and Quarto-specific content\nDefined as Home in the _quarto.yml file\n\n.gitignore: configuration file used in Git repositories to specify intentionally untracked files or directories that Git should ignore."
+  },
+  {
+    "objectID": "11-website.html#quarto-website-files-cont.-2",
+    "href": "11-website.html#quarto-website-files-cont.-2",
+    "title": "demo",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\nabout.qmd: Quarto Markdown file that is typically used to create an About page for a Quarto website.\n\nThis page provides information about the website’s purpose, the author(s), or the organization behind it.\nNot mandatory\nAppears as another page on the navigation bar\n\nstyle.css: Cascading Style Sheets (CSS) file used to define and customize the visual appearance of a Quarto website or document.\n\nallows you to override or extend the default styles provided by Quarto’s themes"
+  },
+  {
+    "objectID": "11-website.html#building-the-website",
+    "href": "11-website.html#building-the-website",
+    "title": "demo",
+    "section": "Building the Website",
+    "text": "Building the Website\n\nTo build the website, click the Render button at the top of the index.qmd file.\nAlternatively, you can also click Build, then Render Website in the top right pane."
+  },
+  {
+    "objectID": "11-website.html#building-the-website-cont.",
+    "href": "11-website.html#building-the-website-cont.",
+    "title": "demo",
+    "section": "Building the Website (cont.)",
+    "text": "Building the Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#connecting-r-project-to-github-1",
+    "href": "11-website.html#connecting-r-project-to-github-1",
+    "title": "demo",
+    "section": "Connecting R Project to GitHub",
+    "text": "Connecting R Project to GitHub\n\nBefore we can publish our website, we need to connect our R project to a GitHub repository\nBe sure that you are signed into your GitHub account in GitHub Desktop.\nOpen GitHub Desktop and add the R project Directory\n\nSelect Add Existing Repository\nChoose the R project directory"
+  },
+  {
+    "objectID": "11-website.html#connecting-r-project-to-github-cont.",
+    "href": "11-website.html#connecting-r-project-to-github-cont.",
+    "title": "demo",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)"
+  },
+  {
+    "objectID": "11-website.html#connecting-r-project-to-github-cont.-1",
+    "href": "11-website.html#connecting-r-project-to-github-cont.-1",
+    "title": "demo",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nCommit changes\n\nWrite a summary (E.g., “Created Quarto website”)"
+  },
+  {
+    "objectID": "11-website.html#connecting-r-project-to-github-cont.-2",
+    "href": "11-website.html#connecting-r-project-to-github-cont.-2",
+    "title": "demo",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nPublish repository to GitHub.com"
+  },
+  {
+    "objectID": "11-website.html#connecting-r-project-to-github-cont.-3",
+    "href": "11-website.html#connecting-r-project-to-github-cont.-3",
+    "title": "demo",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nGo to GitHub.com to confirm that the repository has been published."
+  },
+  {
+    "objectID": "11-website.html#connecting-r-project-to-github-cont.-4",
+    "href": "11-website.html#connecting-r-project-to-github-cont.-4",
+    "title": "demo",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nCheck to see that the project files are now available in your repository"
+  },
+  {
+    "objectID": "11-website.html#publishing-your-website-1",
+    "href": "11-website.html#publishing-your-website-1",
+    "title": "demo",
+    "section": "Publishing Your Website",
+    "text": "Publishing Your Website\n\nReturn to R Studio and open the _quarto.yml file.\nUnder project: include the code output-dir: docs and render the website. This will save the website files in a newly created docs folder."
+  },
+  {
+    "objectID": "11-website.html#publishing-your-website-cont.",
+    "href": "11-website.html#publishing-your-website-cont.",
+    "title": "demo",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nWe no longer need the _site folder, so we can delete it."
+  },
+  {
+    "objectID": "11-website.html#publishing-your-website-cont.-1",
+    "href": "11-website.html#publishing-your-website-cont.-1",
+    "title": "demo",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub Desktop, commit the changes, and push them to GitHub.com.\n\nRemember to leave a summary"
+  },
+  {
+    "objectID": "11-website.html#publishing-your-website-cont.-2",
+    "href": "11-website.html#publishing-your-website-cont.-2",
+    "title": "demo",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub.com.\n\nNote that the docs folder has replaced the _site folder."
+  },
+  {
+    "objectID": "11-website.html#github-pages",
+    "href": "11-website.html#github-pages",
+    "title": "demo",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nClick Settings from the top menu."
+  },
+  {
+    "objectID": "11-website.html#github-pages-cont.",
+    "href": "11-website.html#github-pages-cont.",
+    "title": "demo",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nChoose Pages from the menu on the left-hand-side"
+  },
+  {
+    "objectID": "11-website.html#github-pages-cont.-1",
+    "href": "11-website.html#github-pages-cont.-1",
+    "title": "demo",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nSet the branch to main"
+  },
+  {
+    "objectID": "11-website.html#github-pages-cont.-2",
+    "href": "11-website.html#github-pages-cont.-2",
+    "title": "demo",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nSet the folder to docs"
+  },
+  {
+    "objectID": "11-website.html#github-pages-cont.-3",
+    "href": "11-website.html#github-pages-cont.-3",
+    "title": "demo",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nNote the message saying that the website is being built"
+  },
+  {
+    "objectID": "11-website.html#github-pages-cont.-4",
+    "href": "11-website.html#github-pages-cont.-4",
+    "title": "demo",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nWait a about a minute, then refresh the page. You should see a message that the site is live at a given URL.\n\nThe URL is typically https://username.github.io/repository_name"
+  },
+  {
+    "objectID": "11-website.html#publishing-your-website-cont.-3",
+    "href": "11-website.html#publishing-your-website-cont.-3",
+    "title": "demo",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nFollow the link to view your website"
+  },
+  {
+    "objectID": "11-website.html#adding-pages-to-your-website-1",
+    "href": "11-website.html#adding-pages-to-your-website-1",
+    "title": "demo",
+    "section": "Adding Pages to Your Website",
+    "text": "Adding Pages to Your Website\n\nTo add a webpage, create a new .qmd file and save it in your project directory."
+  },
+  {
+    "objectID": "11-website.html#adding-pages-to-your-website-cont.",
+    "href": "11-website.html#adding-pages-to-your-website-cont.",
+    "title": "demo",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-pages-to-your-website-cont.-1",
+    "href": "11-website.html#adding-pages-to-your-website-cont.-1",
+    "title": "demo",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)\n\nAdd the new Quarto file to the navigation bar in the _quarto.yml file\n\nhref: adds the listing page file to the navigation bar\ntext: is the text that will display on the navigation bar."
+  },
+  {
+    "objectID": "11-website.html#adding-pages-to-your-website-cont.-2",
+    "href": "11-website.html#adding-pages-to-your-website-cont.-2",
+    "title": "demo",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#add-file-to-a-webpage-1",
+    "href": "11-website.html#add-file-to-a-webpage-1",
+    "title": "demo",
+    "section": "Add File to a Webpage",
+    "text": "Add File to a Webpage\n\nYou may want to include downloadable file formats on your website\nAdd the file to your project directory and reference it within your Quarto document.\nIt is helpful to create sub directories to store your files,e.g.,\n\nFigures: store figures\nData: datasets\nFiles: pdf documents"
+  },
+  {
+    "objectID": "11-website.html#add-file-to-a-webpage-cont.",
+    "href": "11-website.html#add-file-to-a-webpage-cont.",
+    "title": "demo",
+    "section": "Add File to a Webpage (cont.)",
+    "text": "Add File to a Webpage (cont.)\n\nReference the file using the syntax ![text](files/filename.pdf)\nE.g.,"
+  },
+  {
+    "objectID": "11-website.html#add-file-to-a-webpage-cont.-1",
+    "href": "11-website.html#add-file-to-a-webpage-cont.-1",
+    "title": "demo",
+    "section": "Add File to a Webpage (cont.)",
+    "text": "Add File to a Webpage (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-1",
+    "href": "11-website.html#adding-a-blog-to-your-website-1",
+    "title": "demo",
+    "section": "Adding a Blog to your Website",
+    "text": "Adding a Blog to your Website\n\nYou may want to include a blog on your website\nApplications\n\nBlog\nResearch projects\nCourses taught\nWorkshops\n\nThe following is based on a blog post by Sam Csik (Csik 2022) for adding a blog page to your Quarto website."
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nIn R Studio, open the terminal\nCreate a new sub directory using mkdir. Note that we are in the project directory demo\n\nFollowing Csik (2022), I named my sub directory posts.\nThe command mkdir posts creates a new directory called posts."
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-1",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-1",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-2",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-2",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-3",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-3",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\n(Optional) Add a _metadata.yml file to your posts directory. This will allow you to provide a customized template to your blog posts.\n\nAdd a text file and name it _metadata.yml"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-4",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-4",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-5",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-5",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nSample customization of a _metadata.yml file"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-6",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-6",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nAdd a .qmd file to the project directory to act as a listing page for the blog.\n\nListing pages are special pages that display a collection of content, such as blog posts, articles, or project summaries"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-7",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-7",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nThe title of the listing page is what will be shown on the website navigation bar.\n\n\n \nSave the .qmd file, e.g., posts.qmd"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-8",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-8",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nThe listing: option in a Quarto YAML heading is used to configure a listing page.\nIt enables you to specify how Quarto organizes and displays a set of documents or items on a page.\nOptions can be found here"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-9",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-9",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-10",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-10",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nAdd the post.qmd to your website.\n\nI.e., include the posts.qmd file to the navigation bar."
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-11",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-11",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)"
+  },
+  {
+    "objectID": "11-website.html#adding-a-blog-to-your-website-cont.-12",
+    "href": "11-website.html#adding-a-blog-to-your-website-cont.-12",
+    "title": "demo",
+    "section": "Adding a Blog to your Website (cont.)",
+    "text": "Adding a Blog to your Website (cont.)\n\nCommit the changes on GitHub Desktop.\nReturn to your website and observe the changes."
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-1",
+    "href": "11-website.html#create-a-blog-post-1",
+    "title": "demo",
+    "section": "Create a Blog Post",
+    "text": "Create a Blog Post\n\nChange the working directory to your posts folder"
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-cont.",
+    "href": "11-website.html#create-a-blog-post-cont.",
+    "title": "demo",
+    "section": "Create a Blog Post (cont.)",
+    "text": "Create a Blog Post (cont.)\n\nCreate a sub-directory for your blog post\n\nCsik (2022) recommends the format YYY-MM-DD-short-post-description"
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-cont.-1",
+    "href": "11-website.html#create-a-blog-post-cont.-1",
+    "title": "demo",
+    "section": "Create a Blog Post (cont.)",
+    "text": "Create a Blog Post (cont.)\n\nCreate a new .qmd file. Call it index.qmd\n\nThis will ensure uniformity among blog post URLs, i.e., https:\\\\\\username.github.io/repository_name/YYY-MM-DD-short-post-description/index.qmd"
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-cont.-2",
+    "href": "11-website.html#create-a-blog-post-cont.-2",
+    "title": "demo",
+    "section": "Create a Blog Post (cont.)",
+    "text": "Create a Blog Post (cont.)\n\nEdit your index.qmd YAML heading\n\nAdd title\ndescription: Allows you to provide a brief description. Could also use subtitle:.\nAdd an author. You can add additional authors as well.\ncitation: will provide a suggested citation at the end of the blog.\nimage: attaches an image to the blog post preview\ndraft: allows you to mark a document as a draft. When a document is marked as a draft, Quarto excludes it from the rendered output by default, meaning it will not be published in the final website, PDF, or other rendered formats."
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-cont.-3",
+    "href": "11-website.html#create-a-blog-post-cont.-3",
+    "title": "demo",
+    "section": "Create a Blog Post (cont.)",
+    "text": "Create a Blog Post (cont.)"
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-cont.-4",
+    "href": "11-website.html#create-a-blog-post-cont.-4",
+    "title": "demo",
+    "section": "Create a Blog Post (cont.)",
+    "text": "Create a Blog Post (cont.)"
+  },
+  {
+    "objectID": "11-website.html#create-a-blog-post-cont.-5",
+    "href": "11-website.html#create-a-blog-post-cont.-5",
+    "title": "demo",
+    "section": "Create a Blog Post (cont.)",
+    "text": "Create a Blog Post (cont.)"
+  },
+  {
+    "objectID": "11-website.html#references",
+    "href": "11-website.html#references",
+    "title": "demo",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nCsik, Samantha. 2022. “Adding a Blog to Your Existing Quarto Website.” October 24, 2022. https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/."
   },
   {
     "objectID": "index.html",
@@ -14,17 +413,17 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "posts/YYYY-MM-DD-short-post-description/index.html",
-    "href": "posts/YYYY-MM-DD-short-post-description/index.html",
-    "title": "blog post title",
-    "section": "",
-    "text": "Introduction\nDogs Are better than cats\n\n\n\n\n\nCitationBibTeX citation:@online{name,\n  author = {Name, Your},\n  title = {Blog Post Title},\n  url = {https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nName, Your. n.d. “Blog Post Title.” https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Click here\n\nContact Information\n\n\nEducation\n\n\nCurrent Position(s)\n\n\nPrevious Position(s)"
   }
 ]

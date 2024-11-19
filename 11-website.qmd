@@ -1,0 +1,430 @@
+---
+format: clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+date: last-modified
+execute: 
+  eval: false
+  echo: true
+css: |
+  .figure .caption {
+    margin-top: 1px; /* Adjust this value as needed */
+  }
+bibliography: ref.bib
+---
+
+# Introduction to Data Analysis for Economics and Finance {.title-slide}
+
+[Lecture 11:]{style="font-size: 1.5em;"} Quarto Website
+
+<hr style="width: 75%; text-align: left; margin-left: 0; border: 1px solid black;">
+
+**Luc Clair**\
+University of Winnipeg\|ECON 2204
+
+\vspace{-1in}
+
+## Prerequisites
+
+-   Download R: <https://cran.r-project.org>
+-   Download R: Studio <https://posit.co/downloads/>
+-   Set up GitHub account: [GitHub.com](github.com)
+-   Download GitHub Desktop: <https://desktop.github.com/download/>
+
+## Workflow
+
+-   The workflow we will be using to create our website is:
+    -   Create a new Quarto project in R Studio
+    -   Connect our project directory to GitHub through Github Desktop
+    -   Publish the newly created website via GitHub Pages
+    -   Create new pages for the website
+    -   Add a blog to the website
+    -   Customize the website
+
+# R Projects
+
+## R Projects
+
+-   To begin, create a new Quarto project in R Studio
+    -   Click *File-\>New Project...*
+
+![ ](screenshots/fig1.png)
+
+## R Projects (cont.)
+
+-   Select *New Directory*
+
+![ ](screenshots/fig2.png){width="50%"}
+
+## R Projects (cont.)
+
+-   Select *Quarto Website*
+
+![ ](screenshots/fig3.png){width="50%"}
+
+## R Projects (cont.)
+
+-   Name the directory. I named mine **demo**.
+-   Choose a path for the new project and click *Create Project*
+
+![ ](screenshots/fig4.png){width="50%"}
+
+## Quarto Website Files
+
+-   R Studio creates a project with a number of files
+
+![ ](screenshots/fig5.png){width="50%"}
+
+## Quarto Website Files (cont.)
+
+-   **\_quarto.yml**: key configuration file for the Quarto website.
+    -   Defines the overall structure and settings for the website project, `project:`
+    -   Defines metadata for the website, e.g., title, author(s), and other descriptive info, `title:` and `description:`
+    -   Controls the structure of the website, `navbar:`
+    -   Specifies themes, `format:`, `theme:`, `css:`
+
+## Quarto Website Files (cont.)
+
+-   **index.qmd**: home page of your Quarto website
+    -   Defines the content and layout for the main landing page of the site
+    -   Can add Markdown and Quarto-specific content
+    -   Defined as *Home* in the **\_quarto.yml** file
+-   **.gitignore**: configuration file used in Git repositories to specify intentionally untracked files or directories that Git should ignore.
+
+## Quarto Website Files (cont.)
+
+-   **about.qmd**: Quarto Markdown file that is typically used to create an *About* page for a Quarto website.
+    -   This page provides information about the website's purpose, the author(s), or the organization behind it.
+    -   Not mandatory
+    -   Appears as another page on the navigation bar
+-   **style.css**: Cascading Style Sheets (CSS) file used to define and customize the visual appearance of a Quarto website or document.
+    -   allows you to override or extend the default styles provided by Quarto's themes
+
+## Building the Website
+
+-   To build the website, click the *Render* button at the top of the **index.qmd** file.
+
+-   Alternatively, you can also click *Build*, then *Render Website* in the top right pane.
+
+## Building the Website (cont.)
+
+![ ](screenshots/fig6.png){width="50%"}
+
+# Connecting R Project to GitHub
+
+## Connecting R Project to GitHub
+
+-   Before we can publish our website, we need to connect our R project to a GitHub repository
+
+-   Be sure that you are signed into your GitHub account in GitHub Desktop.
+
+-   Open GitHub Desktop and add the R project Directory
+
+    -   Select *Add Existing Repository*
+    -   Choose the R project directory
+
+## Connecting R Project to GitHub (cont.)
+
+::: {layout="[50,50]"}
+![ ](screenshots/fig9.png){width="500px"}
+
+![ ](screenshots/fig10.png){width="500px"}
+:::
+
+## Connecting R Project to GitHub (cont.)
+
+-   Commit changes
+    -   Write a summary (E.g., "Created Quarto website")
+
+![ ](screenshots/fig11.png){width="50%"}
+
+## Connecting R Project to GitHub (cont.)
+
+-   Publish repository to [GitHub.com](github.com)
+
+![ ](screenshots/fig12.png){width="50%"}
+
+## Connecting R Project to GitHub (cont.)
+
+-   Go to [GitHub.com](github.com) to confirm that the repository has been published.
+
+![ ](screenshots/fig13.png){width="50%"}
+
+## Connecting R Project to GitHub (cont.)
+
+-   Check to see that the project files are now available in your repository
+
+![ ](screenshots/fig14.png){width="50%"}
+
+# Publishing Your Website
+
+## Publishing Your Website
+
+-   Return to R Studio and open the **\_quarto.yml** file.
+-   Under `project:` include the code `output-dir: docs` and render the website. This will save the website files in a newly created **docs** folder.
+
+![ ](screenshots/fig15.png){width="50%"}
+
+## Publishing Your Website (cont.)
+
+-   We no longer need the **\_site** folder, so we can delete it.
+
+![ ](screenshots/fig16.png){width="50%"}
+
+## Publishing Your Website (cont.)
+
+-   Return to GitHub Desktop, commit the changes, and push them to [GitHub.com](github.com).
+    -   Remember to leave a summary
+
+![ ](screenshots/fig18.png){width="50%"}
+
+## Publishing Your Website (cont.)
+
+-   Return to [GitHub.com](github.com).
+    -   Note that the **docs** folder has replaced the **\_site** folder.
+
+![ ](screenshots/fig19.png){width="50%"}
+
+## GitHub Pages
+
+-   Click *Settings* from the top menu.
+
+![ ](screenshots/fig19a.png){width="50%"}
+
+## GitHub Pages (cont.)
+
+-   Choose *Pages* from the menu on the left-hand-side
+
+![ ](screenshots/fig20.png){width="50%"}
+
+## GitHub Pages (cont.)
+
+-   Set the branch to **main**
+
+![ ](screenshots/fig21.png){width="50%"}
+
+## GitHub Pages (cont.)
+
+-   Set the folder to **docs**
+
+![ ](screenshots/fig22.png){width="50%"}
+
+## GitHub Pages (cont.)
+
+-   Note the message saying that the website is being built
+
+![ ](screenshots/fig23.png){width="50%"}
+
+## GitHub Pages (cont.)
+
+-   Wait a about a minute, then refresh the page. You should see a message that the site is live at a given URL.
+    -   The URL is typically *https://username.github.io/repository_name*
+
+![ ](screenshots/fig24.png){width="50%"}
+
+## Publishing Your Website (cont.)
+
+-   Follow the link to view your website
+
+![ ](screenshots/fig25.png){width="50%"}
+
+# Adding Pages to Your Website
+
+## Adding Pages to Your Website
+
+-   To add a webpage, create a new **.qmd** file and save it in your project directory.
+
+::: {layout="[50,50]"}
+![ ](screenshots/fig47.png){width="50%"}
+
+![ ](screenshots/fig48.png){width="50%"}
+:::
+
+## Adding Pages to Your Website (cont.)
+
+![ ](screenshots/fig49.png){width="50%"}
+
+## Adding Pages to Your Website (cont.)
+
+-   Add the new Quarto file to the navigation bar in the **\_quarto.yml** file
+    -   `href:` adds the listing page file to the navigation bar
+    -   `text:` is the text that will display on the navigation bar.
+
+![ ](screenshots/fig50.png){width="50%"}
+
+## Adding Pages to Your Website (cont.)
+
+![ ](screenshots/fig55.png){width="50%"}
+
+# Add File to a Webpage
+
+## Add File to a Webpage
+
+-   You may want to include downloadable file formats on your website
+-   Add the file to your project directory and reference it within your Quarto document.
+-   It is helpful to create sub directories to store your files,e.g.,
+    -   Figures: store figures
+    -   Data: datasets
+    -   Files: pdf documents
+
+## Add File to a Webpage (cont.)
+
+-   Reference the file using the syntax `![text](files/filename.pdf)`
+-   E.g.,
+
+![ ](screenshots/fig52.png){width="50%"}
+
+## Add File to a Webpage (cont.)
+
+::: {layout="[50,50]"}
+![ ](screenshots/fig53.png){width="50%"}
+
+![ ](screenshots/fig54.png){width="50%"}
+:::
+
+# Adding a Blog to Your Website
+
+## Adding a Blog to your Website
+
+-   You may want to include a blog on your website
+
+-   Applications
+
+    -   Blog
+    -   Research projects
+    -   Courses taught
+    -   Workshops
+
+-   The following is based on a blog post by Sam Csik [@csik2022] for adding a blog page to your Quarto website.
+
+## Adding a Blog to your Website (cont.)
+
+-   In R Studio, open the terminal
+
+-   Create a new sub directory using `mkdir`. Note that we are in the project directory **demo**
+
+    -   Following @csik2022, I named my sub directory **posts**.
+    -   The command `mkdir posts` creates a new directory called **posts**.
+
+## Adding a Blog to your Website (cont.)
+
+![ ](screenshots/fig26.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+![ ](screenshots/fig28.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+-   (Optional) Add a **\_metadata.yml** file to your **posts** directory. This will allow you to provide a customized template to your blog posts.
+    -   Add a text file and name it **\_metadata.yml**
+
+::: {layout="[60,40]"}
+![ ](screenshots/fig29.png){width="50%"}
+
+![ ](screenshots/fig30.png){width="50%"}
+:::
+
+## Adding a Blog to your Website (cont.)
+
+![ ](screenshots/fig32.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+-   Sample customization of a **\_metadata.yml** file
+
+![ ](screenshots/fig31.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+-   Add a **.qmd** file to the project directory to act as a listing page for the blog.
+    -   Listing pages are special pages that display a collection of content, such as blog posts, articles, or project summaries
+
+![ ](screenshots/fig33.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+-   The title of the listing page is what will be shown on the website navigation bar.
+
+![ ](screenshots/fig33a.png){width="50%"}
+
+-   Save the *.qmd* file, e.g., **posts.qmd**
+
+## Adding a Blog to your Website (cont.)
+
+-   The `listing:` option in a Quarto YAML heading is used to configure a listing page.
+
+-   It enables you to specify how Quarto organizes and displays a set of documents or items on a page.
+
+-   Options can be found [here](https://quarto.org/docs/websites/website-listings.html)
+
+## Adding a Blog to your Website (cont.)
+
+![ ](screenshots/fig36.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+-   Add the **post.qmd** to your website.
+    -   I.e., include the **posts.qmd** file to the navigation bar.
+
+## Adding a Blog to your Website (cont.)
+
+![ ](screenshots/fig37a.png){width="50%"}
+
+## Adding a Blog to your Website (cont.)
+
+-   Commit the changes on GitHub Desktop.
+-   Return to your website and observe the changes.
+
+![ ](screenshots/fig38.png){width="50%"}
+
+# Create a Blog Post
+
+## Create a Blog Post
+
+-   Change the working directory to your **posts** folder
+
+![ ](screenshots/fig39.png){width="50%"}
+
+## Create a Blog Post (cont.)
+
+-   Create a sub-directory for your blog post
+    -   @csik2022 recommends the format **YYY-MM-DD-short-post-description**
+
+![ ](screenshots/fig41.png){width="50%"}
+
+## Create a Blog Post (cont.)
+
+-   Create a new **.qmd** file. Call it **index.qmd**
+    -   This will ensure uniformity among blog post URLs, i.e., *https:\\\\\\username.github.io/repository_name/YYY-MM-DD-short-post-description/index.qmd*
+
+::: {layout="[50,50]"}
+![ ](screenshots/fig42.png){width="50%"}
+
+![ ](screenshots/fig43.png){width="50%"}
+:::
+
+## Create a Blog Post (cont.)
+
+-   Edit your **index.qmd** YAML heading
+    -   Add title
+    -   `description:` Allows you to provide a brief description. Could also use `subtitle:`.
+    -   Add an author. You can add additional authors as well.
+    -   `citation:` will provide a suggested citation at the end of the blog.
+    -   `image:` attaches an image to the blog post preview
+    -   `draft:` allows you to mark a document as a draft. When a document is marked as a draft, Quarto excludes it from the rendered output by default, meaning it will not be published in the final website, PDF, or other rendered formats.
+
+## Create a Blog Post (cont.)
+
+![ ](screenshots/fig44.png){width="50%"}
+
+## Create a Blog Post (cont.)
+
+![ ](screenshots/fig45.png){width="50%"}
+
+## Create a Blog Post (cont.)
+
+![ ](screenshots/fig56.png){width="50%"}
+
+## References
