@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "demo"
+  title: "Example"
   navbar:
     left:
       - href: index.qmd
@@ -11,13 +11,17 @@ website:
       - about.qmd
       - href: cv.qmd
         text: CV
-      - 11-website.qmd
+      - href: 11-website.qmd
+        text: Website
+      - href: posts.qmd
+        text: Blog
+
       
 format:
   html:
     theme: cosmo
-    css: styles.css
     toc: true
+    css: styles.css
 
 editor: visual
 
